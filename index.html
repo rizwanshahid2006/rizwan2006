@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS COLLECTION</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.carousel img {
+    height:500px;
+    object-fit: cover;
+    
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(120, 118, 115);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#contact {
+    background-color: #959697;
+    padding: 40px;
+    border-radius: 10px;
+    width: 700px;
+}
+
+footer {
+    margin-top: 20px;
+}
+.img1{
+    height: 80px;
+    border-radius: 40px;
+    margin-right: -120px;
+}
+img{
+    background-size: cover;
+}
+
+.button{
+    padding-right: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img class="img1" src="imag.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <button type="button" class="btn btn-outline-secondary"onclick="addToCart()">add to cart</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.junaidjamshed.com/media/wysiwyg/fabric.jpg" class="d-block w-100" alt="Fashion 1">
+            </div>
+        </div>
+       
+    </header>
+       
+    <section id="products" class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="shalwar.jpg" class="card-img-top" alt="Suit">
+                    <div class="card-body">
+                        <h5 class="card-title">SHALWAR KAMEEZ</h5>
+                        <p class="card-text">$120</p>
+                        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="kurta.jpg" class="card-img-top" alt="Watch">
+                    <div class="card-body">
+                        <h5 class="card-title">KURTA</h5>
+                        <p class="card-text">$250</p>
+                        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.junaidjamshed.com/media/wysiwyg/03_2.jpg" class="card-img-top" alt="Shoes">
+                    <div class="card-body">
+                        <h5 class="card-title">SWEATERS</h5>
+                        <p class="card-text">$80</p>
+                        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/o/f/off_white_cashmere_wool.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755" class="card-img-top" alt="Suit">
+                    <div class="card-body">
+                        <h5 class="card-title">OFF WHITE SHWAL</h5>
+                        <p class="card-text">$500</p>
+                        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/j/j/jjsw-587_2_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755" class="card-img-top" alt="Watch">
+                    <div class="card-body">
+                        <h5 class="card-title">SHERWANI</h5>
+                        <p class="card-text">$200</p>
+                        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/3/3/33125_2_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=755&width=589&canvas=589:755" class="card-img-top" alt="Shoes">
+                    <div class="card-body">
+                        <h5 class="card-title">BLACK BLIND KURTA</h5>
+                        <p class="card-text">$150</p>
+                        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 RS COLLECTION. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart() {
+            alert('Item added to cart!');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
